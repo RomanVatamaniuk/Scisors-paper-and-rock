@@ -1,0 +1,94 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#fee715ff;
+}
+header{
+    background-color:#101820;
+    height: 150px;
+}
+header h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 50px;
+    color:#fee715ff;
+    padding:40px;  
+}
+.main{
+    margin:0 auto;
+    max-width: 960px;
+}
+
+.scores{
+    position: relative;
+    left:32%;
+    width: 200px;
+    height:100px;
+    font-size: 60px;
+    padding:6px;  
+    border:solid #fff 7px;
+    margin:30px;
+    color:#fff;
+}
+.points{
+    text-align: center;
+    position: relative;
+    top:-88%;
+}
+.scores::before{
+    content: 'Player';
+    font-size: 20px;
+    position: relative;
+    left:-33%;
+    top:-10%;
+    background-color:#f54242;
+    color:#fff;
+    padding: 3px 5px;
+}
+.scores::after{
+    content: 'Computer';
+    font-size: 20px;
+    position: relative;
+    right:-93%;
+    top:-197%;
+    background-color:#f54242;
+    color:#fff;
+    padding: 3px 5px;
+}
+.scisors, .paper, .rock{
+    margin:15px;
+    cursor: pointer;
+    border:solid #fee715ff 6px;
+    
+}
+.scisors:hover{
+    box-shadow: #101820 5px 5px 5px;
+    transform: scale(1.2);
+}
+.paper:hover{
+    box-shadow: #101820 5px 5px 5px;
+    transform: scale(1.2);
+}
+.rock:hover{
+    box-shadow: #101820 5px 5px 5px;
+    transform: scale(1.2);
+}
+.result{
+    text-align: center;
+    height: 40px;
+}
+.images{
+    margin:30px;
+    display: flex;
+    justify-content: space-between;
+}
+.tag{
+    text-align: end;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#680973;
+    margin:3px;
+    font-size: 15px;
+}
